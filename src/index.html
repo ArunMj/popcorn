@@ -7,6 +7,9 @@
   <div id="App"></div>
 </body>
 
+<link rel="stylesheet" href="render/test.scss">
+<link rel="stylesheet" href="render/test.css">
+
 <script>window.exports = module.exports</script>
 <script type="text/tsx">
 import * as React from 'react';
@@ -14,7 +17,7 @@ import * as ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 
 let render = () => {
-  const { App } = require('./app');
+  const { App } = require('./render/app');
   ReactDOM.render(<AppContainer><App /></AppContainer>, document.getElementById('App'));
 }
 
