@@ -8,7 +8,7 @@ export class HeaderBar extends React.Component<{ sideBarToggleBtnHandle: Functio
     }
     render() {
         return (
-            <Header as='h2' color='pink'>
+            <Header className='AppHeader' as='h2' color='blue'>
                 {/* <Button icon id='sideBarToggleBtn' onClick={() => this.toggleVisibility()}> */}
                     {/* <Icon name='content' size='small' /> */}
                 {/* </Button> */}

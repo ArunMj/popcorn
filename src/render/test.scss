@@ -1,12 +1,29 @@
 @import "../../node_modules/semantic-ui-css/semantic.min.css";
+$main-background: #444;
+$headerHeight:60px;
 
-html {
-    background: #444;
+body {
+    background: $main-background;
 }
 
-.full{
+.AppHeader{
+    height: $headerHeight;
+}
+.AppMain{
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+}
+
+.AppMainContainer{
+    height: calc(100vh - #{$headerHeight});
+    overflow: scroll;
+    padding: 0 !important;
+}
+
+.TilesViewCardGroup{
+    padding: 10px;
+    background:  $main-background;
+    min-height: 100%;
 }
